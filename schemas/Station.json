@@ -127,8 +127,19 @@
 					"default": 0
 				},
 				"forRandomTasks": {
+					"description": "Wenn false wird die Station niemals für zufällige Tasks genutzt.",
 					"type": "boolean",
 					"default": true
+				},
+				"network": {
+					"description": "Zufällige Ausschreibungen werden nur innerhalb eines Netzwerks generiert.",
+					"type": "string",
+					"default": null
+				},
+				"inDefaultRectangle": {
+					"description": "Zur Defination des Standard-Zoom-Rechtecks der Karte. Bitte nicht selbst setzen!",
+					"type": "boolean",
+					"default": false
 				},
 				"objects": {
 					"description": "Sub-Stationen, die ihre nicht definierten Eigenschaften von der darüberliegenden Ebene erben.",

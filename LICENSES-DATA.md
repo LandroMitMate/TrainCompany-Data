@@ -1,5 +1,10 @@
 Es wurden Daten aus den folgenden Datensätzen verwendet:
 
+## OpenStreetMap & OpenRailwayMap
+Streckengeschwindigkeiten/-informationen, Bahnhöfe (insbesondere mit O123456-Codes) und dazugehörige Informationen stammen u.a. aus [OpenStreetMap](openstreetmap.org) und [OpenRailwayMap](openrailwaymap.org).
+Lizenz: https://www.openstreetmap.org/copyright
+(c) OpenStreetMap contributors/Mitwirkende
+
 ## Trainline (international)
 - https://github.com/trainline-eu/stations
 - Lizenz: Open Database License - https://github.com/trainline-eu/stations/blob/master/LICENCE.txt
@@ -45,7 +50,6 @@ License:
 - License: https://data.sncf.com/pages/licence/#A1
 - Source: https://ressources.data.sncf.com/explore/dataset/lexique-des-acronymes-sncf/information/
 
-
 ## UK
 - License: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 > Contains public sector information licensed under the Open Government Licence v3.0.
@@ -55,3 +59,15 @@ License:
 
 `uk_bplan.json`:
 - Source: https://wiki.openraildata.com/index.php?title=BPLAN_Geography_Data
+
+## Kanada (Stationskürzel)
+- Quelle: https://github.com/baeuchle/ds100bot
+- Lizenz: https://github.com/baeuchle/ds100bot/blob/main/LICENSE
+> Der Quellcode dieses Bots ist unter der Apache Lizenz, Version 2.0, lizensiert. Siehe Datei LICENSE.
+> Die Datentabellen in sources stehen unter verschiedenen Lizenzen. Diese sind in data aufgeführt.
+> Wenn [der license-Eintrag] nicht vorhanden, bedeutet das, dass das Urheberrecht dieser Liste beim Autor des Bots [Bjørn Bäuchle] liegt und die Liste unter Apache Lizenz 2.0 veröffentlicht ist.
+
+Für die Datei existiert kein `license`-Eintrag.
+
+# Karte
+Die Hintergrund-Karte stammt von https://commons.wikimedia.org/wiki/File:BlankMap-World.svg und wurde hierfür angepasst (Skalierung, Farbgebung usw.).

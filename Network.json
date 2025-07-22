@@ -1,0 +1,40 @@
+{
+	"data": [
+		{
+			"idString": "europe-standard",
+			"name": "Europa (Normalspur)",
+			"default": true
+		},
+		{
+			"idString": "uk-standard",
+			"name": "Großbritannien (Normalspur)"
+		},
+		{
+			"idString": "iberian-broad",
+			"name": "Iberische Halbinsel (Breitspur)",
+			"parent": "europe-standard",
+			"forRandomTasks": false
+		},
+		{
+			"idString": "russian-broad",
+			"name": "Osteuropa/Russland (Breitspur)"
+		},
+		{
+			"idString": "moldova-broad",
+			"name": "Moldau (Breitspur)"
+		},
+		{
+			"idString": "usa-standard",
+			"name": "USA (Normalspur)"
+		},
+		{
+			"idString": "north-africa-standard",
+			"name": "Nordafrika (Normalspur)"
+		},
+		{
+			"idString": "special",
+			"name": "Inselnetze",
+			"forRandomTasks": false
+		}
+	]
+}

@@ -164,6 +164,20 @@
 						{"const": 3, "description": "fixer Wagenverband"}
 					]
 				},
+				"service": {
+					"description": "Servicelevel",
+					"type": "integer",
+					"oneOf": [
+						{"const": 0, "description": "HGV"},
+						{"const": 1, "description": "IC"},
+						{"const": 2, "description": "Regionalverkehr"},
+						{"const": 3, "description": "kurzer Regionalverkehr"},
+						{"const": 4, "description": "Sonderzug"},
+						{"const": 5, "description": "Nachtzug"},
+						{"const": 10, "description": "wichtiger Güterzug"},
+						{"const": 11, "description": "Güterzug"}
+					]
+				},
 				"name": {
 					"description": "Name des Fahrzeugs",
 					"type": "string"
@@ -202,7 +216,8 @@
 						{"const": 3, "description": "Batterie"},
 						{"const": 4, "description": "Hybrid"},
 						{"const": 5, "description": "Wasserstoff"},
-						{"const": 6, "description": "Last Mile"}
+						{"const": 6, "description": "Last Mile"},
+						{"const": 7, "description": "Dampf"}
 					]
 				},
 				"range": {
@@ -258,7 +273,8 @@
 							"RS",
 							"SE",
 							"SI",
-							"TR"
+							"TR",
+							"US"
 						]
 					},
 					"uniqueItems": true
@@ -287,7 +303,8 @@
 									"castor",
 									"coal",
 									"beds",
-									"bistroseats"
+									"bistroseats",
+									"pullman"
 								]
 							},
 							"value": {

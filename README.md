@@ -1,6 +1,6 @@
 [![Open in Remote - Containers](https://img.shields.io/static/v1?label=Remote%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/marhei/TrainCompany-Data) [![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/marhei/TrainCompany-Data)
 
-![Lint](https://github.com/marhei/Traincompany-Data/actions/workflows/eclint.yml/badge.svg) ![Validation](https://github.com/marhei/Traincompany-Data/actions/workflows/json_validate.yml/badge.svg) ![Check JSON content](https://github.com/marhei/Traincompany-Data/actions/workflows/check_content.yml/badge.svg) 
+![Lint](https://github.com/marhei/Traincompany-Data/actions/workflows/eclint.yml/badge.svg) ![Validation](https://github.com/marhei/Traincompany-Data/actions/workflows/json_validate.yml/badge.svg) ![Check JSON content](https://github.com/marhei/Traincompany-Data/actions/workflows/check_content.yml/badge.svg)
 
 # TrainCompany Daten
 In diesem Repository finden sich die Daten, die von TrainCompany genutzt werden. Die Daten sind in JSON-Dateien gespeichert, die ein data-Objekt beinhalten. Um ähnliche Objekte zusammenzufassen gibt es einfache Vererbung: **"objects": []** führt dazu, dass alle Objekte, die zwischen den [] eingefügt werden automatische die Eigenschaften des Mutter-Objekts erhalten, wenn diese nicht überschrieben wurden.
@@ -16,6 +16,7 @@ Fahrzeuge, die in TC zur Verfügung stehen
 	* **1** Wagen
 	* **2** Triebzug
 	* **3** fixer Wagenverband
+* **service** *(int)* Zuordnung zu einer passenden Service-Klasse (siehe TaskModel.json)
 * **name** *(string)* Name des Fahrzeuges
 * **shortcut** *(string)* Baureihen/-art-Bezeichnung des Fahrzeuges *(optional)*
 * **speed** *(int)* Höchstgeschwindigkeit in km/h
@@ -30,6 +31,7 @@ Fahrzeuge, die in TC zur Verfügung stehen
 	* **4** Hybrid
 	* **5** Wasserstoff
 	* **6** Last Mile
+	* **7** Dampf
 * **reliability** *(float)* Zuverlässigkeit in Prozent (0.8-1.0)
 * **cost** *(int)* Kosten in Plops
 * **maxConnectedUnits** *(int)* Maximale Anzahl der kuppelbaren Einheiten (bei Triebzügen, Nicht gesetzt = Unbegrenzt)
@@ -100,6 +102,7 @@ Bahnhöfe
 * **y** *(int)* y-Position auf Karte
 * **platformLength** *(int)* maximale Bahnsteiglänge (optional, Standard = 0)
 * **platforms** *(int)* Bahnsteiganzahl (optional, Standard = 0)
+* **network** *(string)* (optional, Standard = default Network)
 * **forRandomTasks** *(bool)* (optional, Standard = true)
 
 ## TaskModel.json
@@ -115,9 +118,11 @@ Modelle für Aufträge, aus denen automatisch neue Aufträge erstellt werden
 	* **2** Regionalverkehr
 	* **3** kurzer Regionalverkehr
 	* **4** Sonderzug
+	* **5** Nachtzug
 	* **10** wichtiger Güterzug
 	* **11** Güterzug
 * **descriptions** *(array)* Array mit mehreren Strings für die Ausschreibung
 * **stations** *(array)* Ril100 aller Bahnhöfe, die angefahren  sollen in der richtigen Reihenfolge, wenn keine angegeben wurden, dann werden zwei zufällige gewählt (optional)
-* **stopsEverwhere** *(bool)* Wenn true dann wird auch automatisch ein Halt an allen Bahnhöfen, die zwischen den oben angegeben Bahnhöfen eingeplant (optional)
+* **pathSuggestions** *(array)* Ril100 aller Bahnhöfe, die standardmäßig mit oder ohne Halt angefahren werden sollen in der richtigen Reihenfolge.
+* **stopsEverywhere** *(bool)* Wenn true dann wird auch automatisch ein Halt an allen Bahnhöfen, die zwischen den oben angegeben Bahnhöfen eingeplant (optional)
 * **neededCapacity** *array* Art der Beladung und Menge, wenn die Menge weggelassen wird führt es zu automatischer Beladung, wenn von Capacity unterstützt (siehe Capacity.json)

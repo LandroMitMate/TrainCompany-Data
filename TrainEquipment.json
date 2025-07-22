@@ -11,22 +11,24 @@
 				{
 					"idString": "750mm",
 					"name": "Schmalspur (750mm)",
-					"forRandomTasks": false
+					"forRandomTasks": false,
+					"network": "special"
 				},
 				{
 					"idString": "1000mm",
 					"name": "Meterspur",
-					"forRandomTasks": false
+					"forRandomTasks": false,
+					"network": "special"
 				},
 				{
 					"idString": "1668mm",
 					"name": "Iberische Breitspur",
-					"forRandomTasks": false
+					"network": "iberian-broad"
 				},
 				{
 					"idString": "1520mm",
 					"name": "Russische Breitspur",
-					"forRandomTasks": false
+					"network": "russian-broad"
 				}
 			]
 		},
@@ -40,9 +42,14 @@
 					"default": true
 				},
 				{
-					"idString": "FR",
-					"emoji": "🇫🇷",
-					"name": "Frankreich"
+					"idString": "AL",
+					"emoji": "🇦🇱",
+					"name": "Albanien"
+				},
+				{
+					"idString": "BY",
+					"emoji": "🇧🇾",
+					"name": "Belarus"
 				},
 				{
 					"idString": "BE",
@@ -50,19 +57,14 @@
 					"name": "Belgien"
 				},
 				{
-					"idString": "NL",
-					"emoji": "🇳🇱",
-					"name": "Niederlande"
+					"idString": "BA",
+					"emoji": "🇧🇦",
+					"name": "Bosnien"
 				},
 				{
-					"idString": "GB",
-					"emoji": "🇬🇧",
-					"name": "Großbritannien"
-				},
-				{
-					"idString": "LU",
-					"emoji": "🇱🇺",
-					"name": "Luxemburg"
+					"idString": "BG",
+					"emoji": "🇧🇬",
+					"name": "Bulgarien"
 				},
 				{
 					"idString": "DK",
@@ -70,19 +72,46 @@
 					"name": "Dänemark"
 				},
 				{
-					"idString": "SE",
-					"emoji": "🇸🇪",
-					"name": "Schweden"
-				},
-				{
-					"idString": "NO",
-					"emoji": "🇳🇴",
-					"name": "Norwegen"
+					"idString": "EE",
+					"emoji": "🇪🇪",
+					"name": "Estland"
 				},
 				{
 					"idString": "FI",
 					"emoji": "🇫🇮",
-					"name": "Finland"
+					"name": "Finnland"
+				},
+				{
+					"idString": "FR",
+					"emoji": "🇫🇷",
+					"name": "Frankreich"
+				},
+				{
+					"idString": "GR",
+					"emoji": "🇬🇷",
+					"name": "Griechenland"
+				},
+				{
+					"idString": "GB",
+					"emoji": "🇬🇧",
+					"name": "Großbritannien",
+					"network": "uk-standard"
+				},
+				{
+					"idString": "IT",
+					"emoji": "🇮🇹",
+					"name": "Italien"
+				},
+				{
+					"idString": "CA",
+					"emoji": "🇨🇦",
+					"name": "Kanada",
+					"network": "usa-standard"
+				},
+				{
+					"idString": "HR",
+					"emoji": "🇭🇷",
+					"name": "Kroatien"
 				},
 				{
 					"idString": "LV",
@@ -95,84 +124,21 @@
 					"name": "Litauen"
 				},
 				{
-					"idString": "EE",
-					"emoji": "🇪🇪",
-					"name": "Estland"
+					"idString": "LU",
+					"emoji": "🇱🇺",
+					"name": "Luxemburg"
 				},
 				{
-					"idString": "RU",
-					"emoji": "🇷🇺",
-					"name": "Russland"
+					"idString": "MA",
+					"emoji": "🇲🇦",
+					"name": "Marokko",
+					"network": "north-africa-standard"
 				},
 				{
-					"idString": "PL",
-					"emoji": "🇵🇱",
-					"name": "Polen"
-				},
-				{
-					"idString": "CZ",
-					"emoji": "🇨🇿",
-					"name": "Tschechien"
-				},
-				{
-					"idString": "CH",
-					"emoji": "🇨🇭",
-					"name": "Schweiz"
-				},
-				{
-					"idString": "AT",
-					"emoji": "🇦🇹",
-					"name": "Österreich"
-				},
-				{
-					"idString": "IT",
-					"emoji": "🇮🇹",
-					"name": "Italien"
-				},
-				{
-					"idString": "ES",
-					"emoji": "🇪🇸",
-					"name": "Spanien"
-				},
-				{
-					"idString": "PT",
-					"emoji": "🇵🇹",
-					"name": "Portugal"
-				},
-				{
-					"idString": "SI",
-					"emoji": "🇸🇮",
-					"name": "Slovenien"
-				},
-				{
-					"idString": "SK",
-					"emoji": "🇸🇰",
-					"name": "Slovakei"
-				},
-				{
-					"idString": "HR",
-					"emoji": "🇭🇷",
-					"name": "Kroatien"
-				},
-				{
-					"idString": "HU",
-					"emoji": "🇭🇺",
-					"name": "Ungarn"
-				},
-				{
-					"idString": "BA",
-					"emoji": "🇧🇦",
-					"name": "Bosnien"
-				},
-				{
-					"idString": "RS",
-					"emoji": "🇷🇸",
-					"name": "Serbien"
-				},
-				{
-					"idString": "MK",
-					"emoji": "🇲🇰",
-					"name": "Nordmazedonien"
+					"idString": "MD",
+					"emoji": "🇲🇩",
+					"name": "Moldau",
+					"network": "moldova-broad"
 				},
 				{
 					"idString": "ME",
@@ -180,9 +146,34 @@
 					"name": "Montenegro"
 				},
 				{
-					"idString": "AL",
-					"emoji": "🇦🇱",
-					"name": "Albanien"
+					"idString": "NL",
+					"emoji": "🇳🇱",
+					"name": "Niederlande"
+				},
+				{
+					"idString": "MK",
+					"emoji": "🇲🇰",
+					"name": "Nordmazedonien"
+				},
+				{
+					"idString": "NO",
+					"emoji": "🇳🇴",
+					"name": "Norwegen"
+				},
+				{
+					"idString": "AT",
+					"emoji": "🇦🇹",
+					"name": "Österreich"
+				},
+				{
+					"idString": "PL",
+					"emoji": "🇵🇱",
+					"name": "Polen"
+				},
+				{
+					"idString": "PT",
+					"emoji": "🇵🇹",
+					"name": "Portugal"
 				},
 				{
 					"idString": "RO",
@@ -190,19 +181,44 @@
 					"name": "Rumänien"
 				},
 				{
-					"idString": "UA",
-					"emoji": "🇺🇦",
-					"name": "Ukraine"
+					"idString": "RU",
+					"emoji": "🇷🇺",
+					"name": "Russland"
 				},
 				{
-					"idString": "BG",
-					"emoji": "🇧🇬",
-					"name": "Bulgarien"
+					"idString": "SE",
+					"emoji": "🇸🇪",
+					"name": "Schweden"
 				},
 				{
-					"idString": "GR",
-					"emoji": "🇬🇷",
-					"name": "Griechenland"
+					"idString": "CH",
+					"emoji": "🇨🇭",
+					"name": "Schweiz"
+				},
+				{
+					"idString": "RS",
+					"emoji": "🇷🇸",
+					"name": "Serbien"
+				},
+				{
+					"idString": "SK",
+					"emoji": "🇸🇰",
+					"name": "Slowakei"
+				},
+				{
+					"idString": "SI",
+					"emoji": "🇸🇮",
+					"name": "Slowenien"
+				},
+				{
+					"idString": "ES",
+					"emoji": "🇪🇸",
+					"name": "Spanien"
+				},
+				{
+					"idString": "CZ",
+					"emoji": "🇨🇿",
+					"name": "Tschechien"
 				},
 				{
 					"idString": "TR",
@@ -210,9 +226,20 @@
 					"name": "Türkei"
 				},
 				{
-					"idString": "MA",
-					"emoji": "🇲🇦",
-					"name": "Marokko"
+					"idString": "UA",
+					"emoji": "🇺🇦",
+					"name": "Ukraine"
+				},
+				{
+					"idString": "HU",
+					"emoji": "🇭🇺",
+					"name": "Ungarn"
+				},
+				{
+					"idString": "US",
+					"emoji": "🇺🇸",
+					"name": "USA",
+					"network": "usa-standard"
 				}
 			]
 		},
@@ -240,7 +267,8 @@
 				},
 				{
 					"idString": "Eurotunnel",
-					"name": "Eurotunnel"
+					"name": "Eurotunnel",
+					"forRandomTasks": false
 				}
 			]
 		}

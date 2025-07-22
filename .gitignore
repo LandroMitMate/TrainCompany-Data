@@ -2,3 +2,5 @@
 /.idea/
 *.svg
 *.csv
+!map_background.svg
+*.gpx
